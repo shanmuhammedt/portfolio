@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f9f7f7;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(237, 245, 245);
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 90px;
+  margin: 0px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+}
+
+.tittle {
+  margin-left: 8%;
+  margin-top: 20%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  /* color: white; */
+}
+
+.image img {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  bottom: 1850px;
+  right: 140px;
+  border-radius: 20px;
+}
+
+.tittle a {
+  padding: 6px 6px;
+  background-color: black;
+  font-size: larger;
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+  margin: 110px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  border-radius: 2rem;
+  width: 70%;
+}
+
+.about-text {
+  font-size: 23px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.information {
+  margin: 1rem 0 1.4rem;
+}
+
+.information .info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.information .info-box span {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#skills {
+  margin-left: 8%;
+  margin-top: 15%;
+  margin-right: 8%;
+}
+
+.skill-container {
+  align-items: center;
+  gap: 72px;
+  margin-right: 10%;
+  padding: 100px;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+.bar-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.bar-box h3 span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.light-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: blue;
+  border-radius: 0.5rem;
+}
+
+.percent-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(2, 1, 12);
+  border-radius: 0.5rem;
+}
+
+.html-bar {
+  width: 94%;
+}
+
+.css-bar {
+  width: 90%;
+}
+
+.js-bar {
+  width: 85%;
+}
+
+.react-bar {
+  width: 80%;
+}
+
+.contact {
+  margin-left: 8%;
+  margin-top: 13%;
+  margin-right: 8%;
+}
+
+.icondiv {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.icon i {
+  font-size: 20px;
+}
+
+.icon:hover {
+  background-image: linear-gradient(red, yellow);
+  color: rgb(238, 247, 255);
+}
+
+.fa-brands {
+  color: rgb(14, 13, 13);
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.up-arrow {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(red, yellow);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(168, 224, 224);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(38, 38, 88);
+  border-radius: 10px;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .tittle {
+    margin-top: 10%;
+  }
+
+  .image img {
+    width: 50%;
+    height: auto;
+    position: static;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .skill-container {
+    padding: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .bar-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .light-bar,
+  .percent-bar {
+    height: 3px;
+  }
+
+  .contact {
+    margin-top: 10%;
+  }
+}
